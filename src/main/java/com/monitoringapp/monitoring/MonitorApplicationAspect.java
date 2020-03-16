@@ -36,6 +36,7 @@ public class MonitorApplicationAspect {
             // Elapsed time
             Long elapsedTime = Duration.between(start, end).toMillis();
 
+            // Publish event if the max time was exceeded
             if(monitor.maxTime() > 0) {
 
                 if(elapsedTime > monitor.maxTime()) {
