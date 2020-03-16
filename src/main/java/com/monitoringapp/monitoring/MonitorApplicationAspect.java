@@ -33,7 +33,7 @@ public class MonitorApplicationAspect {
             proceed = joinPoint.proceed();
             Instant end = Instant.now();
 
-            // Elapsed time
+            // Elapsed time - Testing a new branch
             Long elapsedTime = Duration.between(start, end).toMillis();
 
             if(monitor.maxTime() > 0) {
