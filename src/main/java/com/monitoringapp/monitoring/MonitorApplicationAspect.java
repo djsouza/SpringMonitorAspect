@@ -33,7 +33,7 @@ public class MonitorApplicationAspect {
             proceed = joinPoint.proceed();
             Instant end = Instant.now();
 
-            // Elapsed time
+            // Elapsed time - Features 01
             Long elapsedTime = Duration.between(start, end).toMillis();
 
             // Publish event if the max time was exceeded
