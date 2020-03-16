@@ -6,6 +6,9 @@ import org.springframework.context.event.ApplicationEventMulticaster;
 import org.springframework.context.event.SimpleApplicationEventMulticaster;
 import org.springframework.core.task.SimpleAsyncTaskExecutor;
 
+/**
+ * Configuration for multicasting
+ */
 //@Configuration
 public class AsynchronousSpringEventsConfig {
 
